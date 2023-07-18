@@ -5,16 +5,35 @@ using UnityEngine.UI;
 
 public class ScreenText : MonoBehaviour
 {
-    // this will be the on screen text
-    public Text Text;
-    void Start()
-    {
-        //Text.text = FishSpecies;
-    }
+    //[SerializeField] public static int fishSpecies;
+    //public Button buttonFish;
+    //public GameObject myText;
+    //public int myValue;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //public string myrandomString;
+    //public void RandomFishSpecies()
+
+    //{
+    //    {
+    //        //This is the fish species
+
+    //        {
+    //            string[] _fishSpecies = { "Mackrle", "Tuna", "Great White Shark", "Sun Fish", "Angelfish", "Barracuda", "Viperfish", "Triggerfish" };
+
+
+    //            myrandomString = _fishSpecies[Random.Range(0, _fishSpecies.Length)];
+    //            {
+    //                myValue = Random.Range(1, 100);
+    //            }
+    //        }
+
+
+    //        //Debug.Log(myrandomString + " $" + myValue);
+    //        //myText.GetComponent<Text>().text = (myrandomString + " $" + myValue);
+    //    }
+    //}
+    //public void DisplayText()
+    //{
+    //    myText.GetComponent<Text>().text = (myrandomString + " $" + myValue);
+    //}
 }

@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] public int fishSpecies;
+    [SerializeField] public static int fishSpecies;
     public Button buttonFish;
-    
+    public GameObject myText;
+    public int myValue;
+    public int myLength;
 
-    string myrandomString;
+    public string myrandomString;
     public void RandomFishSpecies()
 
     {
@@ -21,11 +23,26 @@ public class GameManager : MonoBehaviour
 
 
                 myrandomString = _fishSpecies[Random.Range(0, _fishSpecies.Length)];
+                {
+                    myValue = Random.Range(1, 100);
+
+                }
+                {
+                    myLength = Random.Range(8, 500);
+
+                    if (myLength < 150)
+                        myValue = myValue-- ;
+                    if (myLength > 150)
+                      
+                        myValue += 75;
+                    
+                }
             }
-            Debug.Log(myrandomString);
+            Debug.Log(myrandomString + " $" + myValue + " " + myLength + "cm" );
         }
     }
-    
-
-
+    //public void DisplayText()
+    //{
+    //   myText.GetComponent<Text>().text = (myrandomString + " $" + myValue);
+    //}
 }
