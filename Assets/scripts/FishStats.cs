@@ -1,32 +1,22 @@
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
+using TMPro;
 
 public class FishStats : MonoBehaviour
 {
-    //Fish species length and value will be done here
-    [SerializeField] public int FishSpecies = 1 - 8;
-    [SerializeField] public int Length;
+    // score will be calculated  amd displayed on screen here
+    public TextMeshProUGUI messageScore;
+    [SerializeField] public int Score = 0;
      
-    public void update()
+    public void ScoreUpdate(int score)
     {
-
-        //if (Input.GetButtonDown(KeyCode.Mouse0));
-        //{
-        //    Debug.Log("you caught" + FishSpecies);
-        //}
-
-
-
-        //This is the fish species
-        //if (Input.GetButtonDown) ;
-
-        //{
-        //    string[] _randomName = { "Mackrle", "Tuna", "Great White Shark", "Sun Fish", "Angelfish", "Barracuda", "Viperfish", "Triggerfish" };
-
-
-        //    return _randomName[Random.Range(0, _randomName.Length)];
-        //}
+        Score = score;
+        if (score > 1) 
+        {
+            messageScore.text = " $" + score;
+        }
+        
     }
 
     // Update is called once per frame

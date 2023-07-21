@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] public static int fishSpecies;
+     public static int fishSpecies;
     public Button buttonFish;
     public GameObject myText;
     public int myValue;
@@ -38,11 +38,6 @@ public class GameManager : MonoBehaviour
                     
                 }
             }
-            Debug.Log(myrandomString + " $" + myValue + " " + myLength + "cm" );
         }
     }
-    //public void DisplayText()
-    //{
-    //   myText.GetComponent<Text>().text = (myrandomString + " $" + myValue);
-    //}
 }
